@@ -11,15 +11,16 @@
 				switch($page)
 				{
 				    case '1';
-				        include 'homepage.php';
+				        include 'inc/catalog.php';
 				    break;
 				    case '2';
-				        include 'news.php'; 
+				        include 'inc/news.php'; 
 				    break;
 				    case '3';
 				        include 'inc/biography.php'; 
 				    break;
 				    default;
+				    	include 'inc/homepage.php';
 				    break;
 				}
 			?>

@@ -3,7 +3,12 @@ a {text-decoration: none; font-size: 12px; font-weight: bold; outline: none;}
 a:link {color: #ff9900;}
 a:visited {color: #008080;}
 a:hover {text-decoration: underline;}
-
+.paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
+.paragraph-text {text-align: center; margin-top: 10px; font-family: Palatino; font-size: 14px;}
+#McNayImage {vertical-align: top;}
+.paragraph-commisions {color: white; font-family: Palatino; text-align: justify; vertical-align: top; font-size: 14px;}
+.awards {color: white; font-family: Palatino; text-align: justify; vertical-align: top; font-size: 14px;}
+.performances {color: white; font-family: Palatino; text-align: justify; vertical-align: top; font-size: 14px;}
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 800px; 
 				 background-color: black; padding-bottom: 4px;}
 #header-block {width: 478px; display: inline-block;}

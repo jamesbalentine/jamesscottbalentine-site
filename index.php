@@ -11,19 +11,19 @@
 				switch($page)
 				{
 				    case '1';
-				        include 'homepage.html';
+				        include 'homepage.php';
 				    break;
 				    case '2';
-				        include 'news.html'; 
+				        include 'news.php'; 
 				    break;
 				    case '3';
-				        include 'biography.html'; 
+				        include 'inc/biography.php'; 
 				    break;
 				    default;
 				    break;
 				}
 			?>
 		</div>
-		<?php inc 'inc/footer.php'; ?>
+		<?php include 'inc/footer.php'; ?>
 	</body>
 </html>

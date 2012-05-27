@@ -1,14 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-      <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-      <title>JSB Biography</title>
-      <link rel="stylesheet" type="text/css" href="css/jsbstyles.css" />
-</head>
-
-<body>
-
- <?php include "inc/header.php"; ?>
-
 <div class="paragraph">
   <div class="paragraph-text">
     Composer by character and performer by temperament, James Scott Balentine (Jim to those who know him) is about as complex as his music; that is, moderately mysterious, yet engaging. Jim&#8217;s
@@ -66,11 +55,3 @@
     We Balentines have been lucky indeed!</br>
   </div>
 </div>
-<?php
-
- include "inc/footer.php";
-
- ?>
-
-</body>
-</html>

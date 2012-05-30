@@ -22,7 +22,7 @@ a:hover {text-decoration: underline;}
 	#rightcolumn {float: right;}
 	#leftcolumn {float: left;}
 #header-subtext {font-family: Palatino, Verdana, sans-serif; font-size: 26px; text-align: center;}
-#header-quote-wrapper {width: 275px; float: right;}
+#image-quote-wrapper {width: 275px; float: right;}
 
 .Links a {display: block; clear: right;}
 .Links {float: right;}

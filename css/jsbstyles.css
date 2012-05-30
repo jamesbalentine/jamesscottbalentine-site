@@ -21,7 +21,7 @@ a:hover {text-decoration: underline;}
 .header-section {font-family: Palatino, Verdana, sans-serif; font-size: 36px; border-bottom-width:4px; border-bottom-style:groove; border-bottom-color:#ff9900;}
 	#rightcolumn {float: right;}
 	#leftcolumn {float: left;}
-#header-subtext {font-family: Palatino, Verdana, sans-serif; font-size: 36px; text-align: center;}
+#header-subtext {font-family: Palatino, Verdana, sans-serif; font-size: 26px; text-align: center;}
 
 .Links a {display: block; clear: right;}
 .Links {float: right;}

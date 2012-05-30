@@ -22,6 +22,8 @@ a:hover {text-decoration: underline;}
 	#rightcolumn {float: right;}
 	#leftcolumn {float: left;}
 
+.Links a {display: block; clear: right;}
+
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-family: Palatino; font-size: 14px;}
 	#McNayImage {vertical-align: top;}

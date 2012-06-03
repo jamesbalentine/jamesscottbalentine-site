@@ -26,7 +26,7 @@ a:hover {text-decoration: underline;}
 #image-quote-wrapper {width: 275px; float: right;}
 
 .Links a {display: block; clear: right; text-align: right;}
-.Links {float: right;}
+.Links {float: right; clear: right; padding-top: 20px;}
 
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-family: Palatino; font-size: 14px;}

@@ -1,3 +1,9 @@
+<div class="container">
+<div class="body">
+<div img src="C/Images/PianoMusicSoft.png"></div>
+<div img src="C/Images/GuildhianLogoInvert.png"></div>
+</div>
+</div>
   <table class="catalog-category">
        <tr><td><i>Orchestra</i></td></tr>
        <tr><td class="catalog-title">D&ugrave;n &Egrave;ideann Blogh</td>

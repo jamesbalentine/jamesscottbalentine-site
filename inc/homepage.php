@@ -15,6 +15,5 @@
   </div>
   <div>
     <img style="width: 402px; height: 296px; margin-top: 75px;" src="Images/Navarro%20Soft.png" alt="Navarro Rehearsal">
-  </div>
-  <span class="caption2">Conducting a rehearsal of Navarro, a children's opera</span>
+  <div class="caption2">Conducting a rehearsal of Navarro, a children's opera</div>
 </div>

@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<?php include 'inc/header.php'; ?>
-		<div class='content'; ?>
+		<div id="main-content" class='content'; ?>
 			<?php 
 				$page = filter_var($_GET["page"], FILTER_SANITIZE_NUMBER_INT);
 

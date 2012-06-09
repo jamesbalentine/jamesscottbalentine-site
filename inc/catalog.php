@@ -1,8 +1,8 @@
-<div class="container">
-<div class="body">
-<div img src="C/Images/PianoMusicSoft.png"></div>
-<div img src="C/Images/GuildhianLogoInvert.png"></div>
-</div>
+<div id="main-content" class="container">
+  <div class="body">
+    <div img src="C/Images/PianoMusicSoft.png"></div>
+    <div img src="C/Images/GuildhianLogoInvert.png"></div>
+  </div>
 </div>
   <table class="catalog-category">
        <tr><td><i>Orchestra</i></td></tr>

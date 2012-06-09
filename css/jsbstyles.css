@@ -1,4 +1,5 @@
-body {color: white; background-color: black; background-image: url(../Images/black.jpg); }
+@font-face {font-family: "Palatino"; src: url(../fonts/palatino.ttf) format("truetype");}
+body {font-family: "Palantino"; color: white; background-color: black; background-image: url(../Images/black.jpg); }
 a {text-decoration: none; font-size: 12px; font-weight: bold; outline: none;}
 a:link {color: #ff9900;}
 a:visited {color: #008080;}
@@ -9,7 +10,7 @@ a:hover {text-decoration: underline;}
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 1040px; background-color: black; padding-bottom: 4px;}
 
 .caption {font-family: "Palatino", Verdana, sans-serif; font-size: 10px}
-.caption2 {line-height: 50px; text-align: center; font-family: "Palatino", Verdana, sans-serif; font-size: 14px;}
+.caption2 {text-align: center; font-family: "Palatino", Verdana, sans-serif; font-size: 14px;}
 
 .catalog-category {text-align: left; border: "2"; padding-top: 20px; padding-bottom: 4px; margin: auto; height: auto; width: 782px; font-family: "Palatino"; font-size: 24px;}
 .catalog-title {font-size: 16px; padding-top: 10px; vertical-align: top;}

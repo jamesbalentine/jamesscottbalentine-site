@@ -13,7 +13,7 @@
     <a href="Links.html">LINKS</a>
     <a href="Contact.html">CONTACT ME</a>
   </div>
-  <div>
+  <div class="image-captioned">
     <img style="width: 402px; height: 296px; margin-top: 75px;" src="Images/Navarro%20Soft.png" alt="Navarro Rehearsal">
   <div class="caption2">Conducting a rehearsal of Navarro, a children's opera</div>
 </div>

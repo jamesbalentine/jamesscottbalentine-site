@@ -1,7 +1,7 @@
 <div id="main-content" class="container">
   <div class="body">
-    <div img src="C/Images/PianoMusicSoft.png"></div>
-    <div img src="C/Images/GuildhianLogoInvert.png"></div>
+    <img src="../Images/PianoMusicSoft.png">
+    <img src="../Images/GuildhianLogoInvert.png">
   </div>
 </div>
   <table class="catalog-category">

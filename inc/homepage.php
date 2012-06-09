@@ -1,3 +1,7 @@
+<div id="homepage-header">
+  <div id="header-text">James Scott Balentine</div>
+  <div id="header-subtext">COMPOSER - PERFORMER - MUSIC EDUCATOR</div>
+</div>
 <div id="main-content-wrapper">
   <div id="main-content" class="container">
     <div id="header-quote">"...his music is magical, and has a wry sense of humor...it lifts my spirit and awakens my heart."--Tina Lear--Lyricist, Composer, Poet, Songwriter</div>

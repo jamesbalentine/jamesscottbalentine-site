@@ -31,7 +31,8 @@ a:hover {text-decoration: underline;}
 .Links a {display: block; clear: right; text-align: right;}
 .Links {float: right; clear: right; padding-top: 20px;}
 
-#main-content {display: block;}
+#main-content {float: right; padding: 0 25px;}
+#main-content-wrapper {display: block; float: none;}
 
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}

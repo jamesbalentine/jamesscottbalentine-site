@@ -3,7 +3,7 @@
 		<?php include 'inc/scripts.php'; ?>
 	</head>
 	<body>
-		<div class='content'>
+		<div class='container'>
 			<?php 
 				$page = filter_var($_GET["page"], FILTER_SANITIZE_NUMBER_INT);
 

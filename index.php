@@ -22,6 +22,10 @@
 				    	include 'inc/header.php';
 				        include 'inc/biography.php'; 
 				    break;
+				    case '4';
+				    	include 'inc/header.php';
+				        include 'inc/contact.php'; 
+				    break;
 				    default;
 				    	include 'inc/homepage.php';
 				    break;

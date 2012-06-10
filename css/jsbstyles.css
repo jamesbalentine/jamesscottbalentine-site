@@ -16,24 +16,29 @@ a:hover {text-decoration: underline;}
 .catalog-title {font-size: 16px; padding-top: 10px; vertical-align: top;}
 
 .container {width: 1040px; margin-left: auto; margin-right: auto; background-color: black;}
-.copyright {width: 1040px; height: 20px; margin-left: auto; margin-right: auto; padding-top: 50px; background-color: black;  border-top-width:4px; border-top-style:groove; border-top-color:#ff9900; text-align: center; font-size: 12px;}
+.copyright {height: 20px; margin-left: auto; margin-right: auto; padding-top: 50px; background-color: black;  border-right: 40px dotted black; border-left: 40px dotted black; border-top: 2px groove #F90; text-align: center; font-size: 12px;}
+
+#footer-wrapper {width: 1040px; display: block; margin-left: auto; margin-right: auto;}
 
 #header {width: 1040px; border-bottom: 4px solid #ff9900; padding: 50px 0 0 0;}
-#homepage-header {width: 600px; border-bottom: 4px solid #ff9900; padding: 50px 0 0 0;}
+#homepage-left {display: inline-block; width: 700px;}
+#homepage-right {display: inline-block; width: 300px; float: right; border-left: 1px solid #F90; border-bottom: 10px dotted black; border-top: 50px dotted black;}
+#homepage-header {}
+#homepage-header-title {border-right: 120px dotted black; border-left: 120px dotted black; border-bottom: 2px solid #F90; padding: 0;}
 .header-section {font-size: 36px; border-bottom-width:4px; border-bottom-style:groove; border-bottom-color:#ff9900;}
 	#rightcolumn {float: right;}
 	#leftcolumn {float: left;}
 #header-text {font-variant: small-caps; font-size: 38px; text-align: center; padding: 15px 0;}
 #header-subtext {font-size: 18px; text-align: center;}
 #header-quote {font-size: 16px; padding: 10px; text-align: center; float: left; font-style: italic;}
-#image-quote-wrapper {width: 275px; float: right;}
-.image-captioned {width: 285px; display: inline-block;}
+#image-quote-wrapper {width: 275px; float: right; margin-top: -40px;}
+.image-captioned {display: inline-block; padding-left: 115px;}
 
-.Links a {display: block; clear: right; text-align: right;}
-.Links {float: right; clear: right; padding-top: 20px;}
+.Links a,.Links a:visited {width: 205px; float: left; margin-top: 2px;  padding: 2px 0 0 5px; color: #ff9900; border: 1px solid #545; border-radius: 5px; background-color: #210; display: block; clear: both; text-align: center;} 
+.Links {clear: right; padding: 30px 0 0 45px;}
 
 #main-content {display: inline-block; width: auto; padding: 0 25px;}
-#main-content-wrapper {width: 1040px; margin-left: auto; margin-right: auto;}
+#main-content-wrapper {margin-left: auto; margin-right: auto;}
 
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}

@@ -38,6 +38,7 @@ a:hover {text-decoration: underline;}
 .Links {clear: right; padding: 30px 0 0 45px;}
 
 #main-content {}
+.homepage-content #main-content {width: 700px;}
 #main-content-body {display: inline-block;}
 #main-content-wrapper {margin-left: auto; margin-right: auto;}
 

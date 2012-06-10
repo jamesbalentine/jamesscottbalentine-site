@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container homepage-content">
   <div id="homepage-left">
     <div id="homepage-header-title">
       <div id="header-text">James Scott Balentine</div>

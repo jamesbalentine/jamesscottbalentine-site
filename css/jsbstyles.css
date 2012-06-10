@@ -37,7 +37,8 @@ a:hover {text-decoration: underline;}
 .Links a,.Links a:visited {width: 205px; float: left; margin-top: 2px;  padding: 2px 0 0 5px; color: #ff9900; border: 1px solid #545; border-radius: 5px; background-color: #210; display: block; clear: both; text-align: center;} 
 .Links {clear: right; padding: 30px 0 0 45px;}
 
-#main-content {display: inline-block; width: auto; padding: 0 25px;}
+#main-content {}
+#main-content-body {display: inline-block;}
 #main-content-wrapper {margin-left: auto; margin-right: auto;}
 
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
@@ -52,4 +53,4 @@ a:hover {text-decoration: underline;}
 .quote-section {margin-top: 50px; margin-left: 20px; margin-right: 20px; height: auto; width: 782px; font-size: 14px; font-style: italic;}
 .title-description {font-size: 14px; padding-left: 15px; padding-bottom: 15px;}
 .image-quote-credit {font-size: 14px; text-align: center;}
-.books-image {float: left; padding: 20px;}
+#books-image {float: left; padding: 20px;}

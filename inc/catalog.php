@@ -1,5 +1,5 @@
 <div id="main-content" class="container">
-  <div class="body">
+  <div id="main-content-body">
     <img src="Images/PianoMusicSoft.png">
     <img src="Images/GuildhianLogoInvert.gif">
   </div>

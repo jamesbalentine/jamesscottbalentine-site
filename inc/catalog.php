@@ -1,6 +1,7 @@
 <div id="main-content" class="container">
   <div id="main-content-body">
     <img src="Images/PianoMusicSoft.png">
+    <div id="image-logo"></div> 
     <img src="Images/GuildhianLogoInvert.gif">
   </div>
 </div>

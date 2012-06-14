@@ -5,7 +5,7 @@
   </div>
 </div>
 <div class="container">
-  <div class="catalog-category"><i>Orchestra</i></td></div>
+  <div class="catalog-category"><i>Orchestra</i></div>
        <div id="catalog-title">D&ugrave;n &Egrave;ideann Blogh</div>
           <div id="title-description">Double concerto for clarinet, bassoon and chamber orchestra</div>
        <div id="catalog-title">Triqueta</div>

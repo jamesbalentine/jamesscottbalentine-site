@@ -1,8 +1,8 @@
 <div id="main-content" class="container">
-	<div class="body">
-		<div class="image-quote-wrapper">
-			<img id="mcnayimage" src="../Images/mcnay2.jpg" alt="Outside the McNay">
+	<div class="container">
+			<div id="mcnayimage"><img src="../Images/mcnay2.jpg"></div>
 			<div id="newscaption">Outside the McNay Art Museum, San Antonio</div>
-		</div>
+			<div id="booksimage"><img src="../Images/books.png"></div>
+
 	</div>
 </div>

@@ -1,9 +1,7 @@
 <div id="main-content" class="container">
   <div id="main-content-body">
-    <div id="piano-image"></div>
-    <img src="Images/PianoMusicSoft.png">
-    <div id="image-logo"></div> 
-    <img src="Images/GuildhianLogoInvert.gif">
+    <div id="piano-image"><img src="Images/PianoMusicSoft.png"></div>
+    <div id="image-logo"><img src="Images/GuildhianLogoInvert.gif"></div>  
   </div>
 </div>
   <table class="catalog-category">

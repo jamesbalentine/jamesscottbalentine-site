@@ -1,7 +1,6 @@
 <div id="main-content" class="container">
 	<div id="main-content-body">
 		<div id="books-image"><img src="Images/books.png"></div>
-		<div class="contact-list">
 		<li>You may download pdf scores from this web site to print, study, or help prepare music for
 		performance. By downloading any music from this web site, you agree that you will not sell it in
 		any form, printed or electronic.</li>
@@ -18,6 +17,5 @@
 		<li>Music Dealers – <a href="mailto:contact@guildhian.com?subject=Dealer Info
 		Request">Guildhian Music</a> offers wholesale terms to music dealers for our print music.
 		Terms vary according to quantity per item and payment due date. Please inquire via email.</li>
-		</div> 
     </div>
 </div>

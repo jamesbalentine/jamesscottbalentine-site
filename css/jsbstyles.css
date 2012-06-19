@@ -48,7 +48,7 @@ a:hover {text-decoration: underline;}
 
 .paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 782px; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}
-.paragraph-list {padding: 20px 0 0; text-align: left; margin-left: auto; margin-right: auto; height: auto;}	
+.paragraph-list {padding: 20px 0 0; text-align: left; margin-left: auto; margin-right: auto; height: auto; width: 300px;}	
 
 .paragraph-commisions {color: white; text-align: justify; vertical-align: top; font-size: 14px;}
 .performances {color: white; text-align: justify; vertical-align: top; font-size: 14px;}

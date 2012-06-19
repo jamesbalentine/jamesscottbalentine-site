@@ -2,8 +2,8 @@
 	<div id="main-content-body">
 		<div id="books-image"><img src="Images/books.png"></div>
 		<div class="paragraph-list">
-		<p>You may download pdf scores from this web site to print, study, or help prepare music for
-		performance. By downloading any music from this web site, you agree that you will not sell it in
+		<p>You may download pdf scores from this web site to print, study, or help prepare music for 
+	    performance. By downloading any music from this web site, you agree that you will not sell it in
 		any form, printed or electronic.</p>
 		<p>If you would like instrumental parts for performance, please send your request to <a
 		href="mailto:contact@guildhian.com?subject=Music PDF Request">Guildhian Music</a>,

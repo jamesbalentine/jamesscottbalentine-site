@@ -50,7 +50,8 @@ a:hover {text-decoration: underline;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}
 .paragraph-list {padding: 20px; text-align: left; height: auto; width: 820px;}	
 
-.paragraph-commisions {color: white; text-align: justify; vertical-align: top; font-size: 14px; list-style-type: none;}
+.paragraph-commisions {color: white; text-align: justify; vertical-align: top; font-size: 14px;}
+.paragraph-commisions li {list-style-type: none;}
 .performances {color: white; text-align: justify; vertical-align: top; font-size: 14px;}
 	#header-block {width: 478px; display: inline-block;}
 

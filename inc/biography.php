@@ -5,7 +5,7 @@
     appropriate.
   </div>
   <div id="mcnayimage"><img src="Images/jsbedinburghsoft.png"></div>
-  <div class="paragraph-commissions">His music has been commissioned by soloists and ensembles including:</div>
+  <div class="paragraph-commissions">His music has been commissioned by soloists and ensembles including:
     <ul>
       <li> The Barlow Endowment
       <li> The Opera Guild of San Antonio
@@ -18,14 +18,16 @@
       <li> The Krost Symposium
       <li> The City of San Antonio Arts and Cultural Affairs
     </ul>
-  <div class="awards">Awards, Grants and honors from:</div>
+  </div>
+  <div class="awards">Awards, Grants and honors from:
     <ul>
       <li> The American Music Center
       <li> The Artist Foundation of San Antonio
       <li> Conservatory aan Zee, Ostend, Belgium
       <li> ASCAP
     </ul>
-  <div class="performances">With performances at:</div>
+  </div>
+  <div class="performances">With performances at:
     <ul>
      <li> Utah Arts Festival
      <li> International Clarinet Association ClarinetFest
@@ -33,6 +35,7 @@
      <li> Shanghai International Clarinet Festival
      <li> Southwest Guitar Festival, and many more
     </ul>
+  </div>
   <div class="paragraph-text">              
     A prolific arranger as well as composer, Jim&#8217;s arrangements have been performed by the San Antonio
     Symphony, Phoenix Symphony, and others, and his big band charts are included in the libraries of big bands across the United States.<br><br>

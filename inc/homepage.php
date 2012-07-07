@@ -26,7 +26,7 @@
       <a href="Scores.html">FULL SCORES IN pdf</a>
       <a href="Listen.html">LISTEN</a>
       <a href="Links.html">LINKS</a>
-      <a href="index.php?page=4">CONTACT ME</a>
+      <a href="index.php?page=7">CONTACT ME</a>
     </div>
   </div>
 </div>

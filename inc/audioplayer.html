@@ -9,16 +9,17 @@ div .media {width: auto !important;}
 .media li {float: left; margin-left: 5px;}
 .media ul {clear: right;}
 .media img {margin: 8px !important;}
-.media-details {width: 425px !important; padding-left: 6px;}
+.media-details {width: 425px !important; padding-left: 6px; margin-right: 40px;}
 .media-title {padding-top: 6px;}
 .media-title-suffix {padding: 6px 0 0 6px; clear: right;}
 .media-instruments {padding-top: 3px; border-bottom: 1px solid gray; font-size: 14px; line-height: 15px; clear: left;}
 .media-instruments-prefix {text-decoration: underline;}
 .media-performances {padding-top: 3px; font-size: 14px; line-height: 15px; clear: left;}
 .media-performances-prefix {text-decoration: underline;}
-.pauseButton {border-radius: 10px; margin: 15px; background: url('Images/Pausebutton.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
-.playButton {border-radius: 10px; margin: 15px; background: url('Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
-.playerButton {width: 80px !important;}
+.pauseButton {border-radius: 10px; margin: 15px; background: url('http://guildhian.com/staging/Images/Pausebutton.jpg') no-repeat scroll center center; background-size: 40px 40px; width: 40px; height: 40px; display: block;}
+.playButton {border-radius: 10px; margin: 15px; background: url('http://guildhian.com/staging/Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 40px 40px; width: 40px; height: 40px; display: block;}
+.playerButton {width: 40px !important;}
+a.browse {margin-top: 18px;}
 </style>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -42,30 +43,42 @@ div .media {width: auto !important;}
         swfPath: "/js",
         supplied: "m4a, oga"
       });
+      $("#jquery_jplayer_3").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
     });
-    function playerPause(id,playerid) {
-    	$(document.getElementById(playerid)).jPlayer('pauseOthers');
-    	$(document.getElementById(playerid)).jPlayer('play');
-    	$(".playerButton").removeClass("pauseButton");
-    	$("#"+id).addClass("pauseButton");
-    	$("#"+id).removeClass("playButton");
-    	document.getElementById(id).onclick=function(){playerPlay(id,playerid);};
-    }
-    function playerPlay(id,playerid) {
-    	$(document.getElementById(playerid)).jPlayer('pauseOthers');
-    	$(document.getElementById(playerid)).jPlayer('pause');
+    function playerPause(buttonid) {
+    	$("#jquery_"+buttonid).jPlayer('pauseOthers');
+    	$("#jquery_"+buttonid).jPlayer('play');
     	$(".playerButton").removeClass("pauseButton");
     	$(".playerButton").addClass("playButton");
-    	document.getElementById(id).onclick=function(){playerPause(id,playerid);};
+    	$(".playerButton").each(function(){this.onclick=function(){playerPause(this.id);}});
+    	$("#"+buttonid).addClass("pauseButton");
+    	$("#"+buttonid).removeClass("playButton");
+    	document.getElementById(buttonid).onclick=function(){playerPlay(buttonid);};
+    }
+    function playerPlay(buttonid) {
+    	$("#jquery_"+buttonid)).jPlayer('pauseOthers');
+    	$("#jquery_"+buttonid)).jPlayer('pause');
+    	$(".playerButton").removeClass("pauseButton");
+    	$(".playerButton").addClass("playButton");
+    	document.getElementById(buttonid).onclick=function(){playerPause(buttonid);};
     }
 </script>
 <a class="prev browse left"></a>
-<div class="scrollable" id="scrollable">
+<div class="scrollable" id="scrollable" style="height: 70px;">
 	<div class="items">
 		<div class="media">
 			<div class="media-image-wrapper media">
 				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				<div id="jplayer_1_play" class="playerButton playButton" onclick=playerPause(id,'jquery_jplayer_1'); ></div>
+				<div id="jplayer_1" class="playerButton playButton" onclick=playerPause(id); ></div>
 			</div>
 			<div class="media-details">
 				<div class="media-title media">D&ugrave;n &Egrave;ideann Blogh</div>
@@ -82,25 +95,12 @@ div .media {width: auto !important;}
 					<li>bassoon</li>
 					<li>chamber orchestra</li>
 				</div>
-				<div class="media-performances media">
-					<div class="media-performances-prefix media">Performances:</div>
-					<li>San Antonio</li>
-					<li>Brussels</li>
-					<li>Brussels</li>
-					<li>Brussels</li>
-					<li>Brussels</li>
-					<li>Brussels</li>
-					<li>Edinborough</li>
-					<li>Edinborough</li>
-					<li>Edinborough</li>
-				</div>
-				<div class="media-player">-----------</div>
 			</div>
 		</div>
 		<div class="media">
 			<div class="media-image-wrapper media">
 				<div id="jquery_jplayer_2" class="jp-jplayer"></div>
-				<div id="jplayer_2_play" class="playerButton playButton" onclick=playerPause(id,'jquery_jplayer_2'); ></div>
+				<div id="jplayer_2" class="playerButton playButton" onclick=playerPause(id); ></div>
 			</div>
 			<div class="media-details">
 				<div class="media-title media">Triqueta</div>
@@ -113,17 +113,26 @@ div .media {width: auto !important;}
 					<li>percussion</li>
 					<li>strings</li>
 				</div>
-				<div class="media-performances media">
-					<div class="media-performances-prefix media">Performances:</div>
-					<li>Brussels</li>
-					<li>Edinborough</li>
-				</div>
-				
 			</div>
 		</div>
-		<div>test text3</div>
-		<div>test text4</div>
-		<div>test text5</div>
+		<div class="media">
+			<div class="media-image-wrapper media">
+				<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+				<div id="jplayer_3" class="playerButton playButton" onclick=playerPause(id); ></div>
+			</div>
+			<div class="media-details">
+				<div class="media-title media">Triqueta 3</div>
+				<div class="media-title-suffix media"> - Triple Concerto</div>
+				<div class="media-instruments media">
+					<div class="media-instruments-prefix media">Instruments:</div>
+					<li>all</li>
+					<li>guitar</li>
+					<li>piano</li>
+					<li>percussion</li>
+					<li>strings</li>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <a class="next browse right"></a>

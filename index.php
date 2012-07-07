@@ -39,6 +39,7 @@
 				    break;
 				    default;
 				    	include 'inc/homepage.php';
+				    	include 'inc/audioplayer.html';
 				    break;
 				}
 			?>

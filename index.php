@@ -1,48 +1,15 @@
 <html>
 	<head>
 		<?php include 'inc/scripts.php'; ?>
+		<script type='text/javascript'>
+			function resize(frame) {
+				frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
+			}
+		</script>
 	</head>
 	<body>
 		<div class='container'>
-			<?php 
-				$page = filter_var($_GET["page"], FILTER_SANITIZE_NUMBER_INT);
-
-				switch($page)
-				{
-				    case '1';
-				    	include 'inc/header.php';
-				        include 'inc/catalog.php';
-				    break;
-				    case '2';
-				    	include 'inc/header.php';
-				        include 'inc/news.php'; 
-				    break;
-				    case '3';
-				    	include 'inc/header.php';
-				        include 'inc/biography.php'; 
-				    break;
-				    case '4';
-				    	include 'inc/header.php';
-				        include 'inc/scorespdf.php'; 
-				    break;
-				    case '5';
-				    	include 'inc/header.php';
-				    	include 'inc/listen.php';
-				    break;
-				    case '6';
-				    	include 'inc/header.php';
-				    	include 'inc/links.php';
-				    break;
-				    case '7';
-				    	include 'inc/header.php';
-				    	include 'inc/contact.php';
-				    break;
-				    default;
-				    	include 'inc/homepage.php';
-				    	include 'inc/audioplayer.html';
-				    break;
-				}
-			?>
+			<iframe onload="resize(document.getElementById('iframe-content'))" onresize="resize(document.getElementById('iframe-content'))" onunload="resize(document.getElementById('iframe-content'))" src='inc/homepage.php' id='iframe-content' name='iframe-content' scrolling='no' frameborder='0' border='0' style='width: 1040px; height: 556px;'></iframe>
 		</div>
 		<?php include 'inc/footer.php'; ?>
 	</body>

@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <div class="container" id="main-content">
   <div id="main-content-body">
     <div id="piano-image"><img src="Images/PianoMusicSoft.png"></div>

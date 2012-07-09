@@ -1,6 +1,7 @@
+<?php include 'header.php'; ?>
 <div id="main-content" class="container">
 	<div id="main-content-body">
-		<div id="books-image"><img src="Images/books.png"></img></div>
+		<div id="books-image"><img src="../Images/books.png"></img></div>
 		<div class="paragraph-list">
 			<p>You may download pdf scores from this web site to print, study, or help prepare music for 
 		    performance. By downloading any music from this web site, you agree that you will not sell it in

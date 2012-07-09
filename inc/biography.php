@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <div class="paragraph">
   <div class="paragraph-text">
     Composer by character and performer by temperament, James Scott Balentine (Jim to those who know him) is about as complex as his music; that is, moderately mysterious, yet engaging. Jim&#8217;s

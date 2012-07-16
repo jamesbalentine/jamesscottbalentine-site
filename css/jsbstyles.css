@@ -46,7 +46,7 @@ a:hover {text-decoration: underline;}
 #main-content-wrapper {margin-left: auto; margin-right: auto;}
 #mcnayimage {vertical-align: top;}
 
-.paragraph {text-align: center; margin-left: auto; margin-right: auto; height: auto; background-color: black;}
+.paragraph {text-align: left; margin-left: auto; margin-right: auto; height: auto; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}
 .paragraph-list {padding: 20px; text-align: left; height: auto; width: 820px;}	
 

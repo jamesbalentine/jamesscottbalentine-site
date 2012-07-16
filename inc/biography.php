@@ -5,7 +5,7 @@
     music is fun and interesting to play, engaging to the listener, and crafted in a personal language influenced by ethnic dance, jazz, folk idioms, and atonal and serial techniques when they seem
     appropriate.
   </div>
-  <div id="mcnayimage"><img src="Images/jsbedinburghsoft.png"></div>
+  <div id="mcnayimage"><img src="../Images/jsbedinburghsoft.png"></div>
   <div class="paragraph-commissions">His music has been commissioned by soloists and ensembles including:
     <ul>
       <li> The Barlow Endowment

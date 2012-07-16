@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <div class="container" id="main-content">
   <div id="main-content-body">
-    <div id="piano-image"><img src="Images/PianoMusicSoft.png"></div>
-    <div id="image-logo"><img src="Images/GuildhianLogoInvert.gif"></div>  
+    <div id="piano-image"><img src="../Images/PianoMusicSoft.png"></div>
+    <div id="image-logo"><img src="../Images/GuildhianLogoInvert.gif"></div>  
   </div>
 </div>
 <div class="container">

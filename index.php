@@ -4,6 +4,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/player.css">
+		<script type="text/javascript">
+			window.onbeforeunload = null;
+		</script>
 	</head>
 	<body>
 		<div style="position: fixed; bottom: 0; left: 200px; z-index: 1;">

@@ -10,6 +10,6 @@ img.media {margin: 8px !important;}
 .media-instruments-prefix {text-decoration: underline;}
 .media-performances {padding-top: 3px; font-size: 14px; line-height: 15px; clear: left;}
 .media-performances-prefix {text-decoration: underline;}
-.pauseButton {border-radius: 10px; margin: 15px; background: url('Pausebutton.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
-.playButton {border-radius: 10px; margin: 15px; background: url('Playbutton2.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
+.pauseButton {border-radius: 10px; margin: 15px; background: url('../Images/Pausebutton.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
+.playButton {border-radius: 10px; margin: 15px; background: url('../Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
 .playerButton {width: 80px !important;}

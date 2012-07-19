@@ -3,7 +3,7 @@
 ?>
 <html>
 	<head>
-		<script src="css/player.css" />
+		<script src="css/player.css"></script>
 	</head>
 	<body>
 		<div style="position: fixed; bottom: 0; left: 200px; z-index: 1;">

@@ -1,16 +1,14 @@
+<?php
+	header('X-Frame-Options: GUILDHIAN'); 
+?>
 <html>
 	<head>
-		<?php include 'inc/scripts.php'; ?>
-		<script type='text/javascript'>
-			function resize(frame) {
-				frame.style.height = frame.contentWindow.document.body.scrollHeight + "px";
-			}
-		</script>
+		<script src="css/player.css" />
 	</head>
 	<body>
-		<div class='container'>
-			<iframe onload="resize(document.getElementById('iframe-content'))" onresize="resize(document.getElementById('iframe-content'))" onunload="resize(document.getElementById('iframe-content'))" src='inc/homepage.php' id='iframe-content' name='iframe-content' scrolling='no' frameborder='0' border='0' style='width: 1040px; height: 556px;'></iframe>
+		<div style="position: fixed; bottom: 0; left: 200px; z-index: 1;">
+			<?php include "inc/player.php"; ?>
 		</div>
-		<?php include 'inc/footer.php'; ?>
+		<iframe id="inner" name="inner" src="inc/innerframe.php" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 	</body>
 </html>

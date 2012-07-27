@@ -18,7 +18,7 @@
             <div id="title-description">For orchestra</div>
   </div>
   <div class="catalog-category"><i>Wind Ensemble</i>
-      <div id="catalog-title">"Red Poppy and the Yellow Rose"></div>
+      <div id="catalog-title">"Red Poppy and the Yellow Rose"</div>
             <div id="title-description">Commissioned by The University of Texas at San Antonio for the Silver Anniversary Convocation, September, 1994. Duration 4 minutes</div>
       <div id="catalog-title">"The Image of Dreams"</div>
             <div id="title-description">Ensemble commissioned by Robert Walzel. Duration: 6 minutes</div>

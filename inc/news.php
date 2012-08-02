@@ -1,4 +1,3 @@
-<?php include 'header.php'; ?>
 <div id="main-content" class="container">
 	<div class="main-content-body">
 		<div id="mcnayimage"><img src="../Images/mcnaysoft.png"></div>

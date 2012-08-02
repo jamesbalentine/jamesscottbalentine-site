@@ -1,0 +1,9 @@
+.catalog-section {width: 850px; margin-left: auto; margin-right: auto;}
+.catalog-section-title {display: block; clear: both; padding: 10px; font-weight: bold;}
+
+.catalog-composition {display: block; padding: 10px; border-top: 1px solid #F90; height: 110px;}
+.catalog-composition-title {display: inline; vertical-align: top; width: 200px; float: left; text-decoration: underline; clear: left;}
+.catalog-composition-description {display: inline; width:400px; float: left; padding: 0 10px 0 10px;}
+
+.audiourl {display: inline; float: right; width: 210px; clear: right;}
+.score {display: inline; float: right; width: 210px; clear: right;}​

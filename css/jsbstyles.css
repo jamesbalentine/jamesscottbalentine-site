@@ -7,6 +7,10 @@ a:hover {text-decoration: underline;}
 
 .audio {vertical-align: bottom;}
 .awards {color: white; text-align: justify; vertical-align: top; font-size: 14px;}
+
+#backbutton {position: fixed; width: 90px; height: 20px; color: white; background-color: #F90; padding-right: 5px; text-align: right;}
+#backbutton-wrapper {bottom: -20px; right: 95px; position: absolute;}
+
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 1040px; background-color: black; padding-bottom: 4px;}
 #books-image {float: left; padding: 10px 0;}
 #bio {padding: 5px; background-color: black; width: 1080px; margin-left: auto; margin-right: auto; color: white;}
@@ -37,14 +41,19 @@ a:hover {text-decoration: underline;}
 .caption {font-size: 10px}
 .caption2 {text-align: center; font-size: 14px;}
 
+#catalog {padding-top: 20px;}
 .catalog-category {text-align: left; border: "2"; padding-top: 20px; padding-bottom: 4px; margin: auto; height: auto; width: 782px; font-size: 24px;}
 #catalog-title {font-size: 16px; font-weight: bold; padding-top: 10px; vertical-align: top; text-indent: 20px;}
+
+#contactbutton {position: fixed; width: 90px; height: 20px; color: white; background-color: #F90; padding-right: 5px; text-align: right;}
+#contactbutton-wrapper {bottom: -45px; right: 95px; position: absolute;}
+
 .container {width: 1040px; margin-left: auto; margin-right: auto; background-color: black;}
 .copyright {height: 20px; margin-left: auto; margin-right: auto; padding-top: 50px; border-right: 40px dotted black; border-left: 40px dotted black; border-top: 2px groove #F90; text-align: center; font-size: 12px; clear: left;}
 
 #footer-wrapper {width: 1040px; display: block; margin-left: auto; margin-right: auto; background-color: black;}
 
-#header {width: 1040px; border-bottom: 4px solid #ff9900; padding: 50px 0 0 0;}
+#header {width: 1040px; position: relative; border-bottom: 4px solid #ff9900; padding: 50px 0 0 0;}
 #homepage-left {display: inline-block; width: 700px;}
 #homepage-right {display: inline-block; width: 300px; float: right; border-left: 1px solid #F90; border-bottom: 10px dotted black; border-top: 50px dotted black;}
 #homepage-header {}
@@ -70,7 +79,7 @@ a:hover {text-decoration: underline;}
 #main-content-wrapper {margin-left: auto; margin-right: auto;}
 #mcnayimage {vertical-align: top; text-align: center;}
 
-.paragraph {text-align: left; margin-left: auto; margin-right: auto; height: auto; background-color: black;}
+.paragraph {height: auto; margin-left: auto; margin-right: auto; padding: 50px 100px 50px 100px; text-align: left; background-color: black;}
 .paragraph-text {text-align: center; margin-top: 10px; font-size: 14px;}
 .paragraph-list {padding: 20px; text-align: left; height: auto; width: 820px;}	
 

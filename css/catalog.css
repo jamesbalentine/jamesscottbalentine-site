@@ -1,9 +1,15 @@
+.audiourl {}
+
+.catalog-composition {display: block; position: relative; padding: 10px; border-top: 1px solid #F90; height: 110px;}
+.catalog-composition-description {display: inline-block; width:400px; padding: 0 10px 0 10px;}
+.catalog-composition-links {display: inline-block; position: absolute; right: 5px; top: 5px; width: 210px;}
+.catalog-composition-title {display: inline-block; vertical-align: top; width: 200px; text-decoration: underline; clear: left;}
+
 .catalog-section {width: 850px; margin-left: auto; margin-right: auto;}
-.catalog-section-title {display: block; clear: both; padding: 10px; font-weight: bold;}
+.catalog-section-title-menulist {margin-left: -100px; position: fixed;}
+.catalog-section-title-menu {width: 100px; margin: 5px 0 5px 0; background-color: #f90;}
+.catalog-section-title-menu a, .catalog-section-title-menu a:visited {color: white; background-color: #f90;}
+.catalog-section-title, a.catalog-section-title {display: block; clear: both; padding: 10px 0 5px 70px; font-weight: bold; font-size: 18px;}
 
-.catalog-composition {display: block; padding: 10px; border-top: 1px solid #F90; height: 110px;}
-.catalog-composition-title {display: inline; vertical-align: top; width: 200px; float: left; text-decoration: underline; clear: left;}
-.catalog-composition-description {display: inline; width:400px; float: left; padding: 0 10px 0 10px;}
-
-.audiourl {display: inline; float: right; width: 210px; clear: right;}
-.score {display: inline; float: right; width: 210px; clear: right;}​
+.price {text-align: right;}
+.score {}​

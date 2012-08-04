@@ -9,7 +9,7 @@ a:hover {text-decoration: underline;}
 .awards {color: white; text-align: justify; vertical-align: top; font-size: 14px;}
 
 #backbutton {position: fixed; width: 90px; height: 20px; color: white; background-color: #F90; padding-right: 5px; text-align: right;}
-#backbutton-wrapper {bottom: -20px; right: 95px; position: absolute;}
+#backbutton-wrapper {bottom: -20px; right: 0; position: absolute;}
 
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 1040px; background-color: black; padding-bottom: 4px;}
 #books-image {float: left; padding: 10px 0;}
@@ -46,7 +46,7 @@ a:hover {text-decoration: underline;}
 #catalog-title {font-size: 16px; font-weight: bold; padding-top: 10px; vertical-align: top; text-indent: 20px;}
 
 #contactbutton {position: fixed; width: 90px; height: 20px; color: white; background-color: #F90; padding-right: 5px; text-align: right;}
-#contactbutton-wrapper {bottom: -45px; right: 95px; position: absolute;}
+#contactbutton-wrapper {bottom: -45px; right: 0; position: absolute;}
 
 .container {width: 1040px; margin-left: auto; margin-right: auto; background-color: black;}
 .copyright {height: 20px; margin-left: auto; margin-right: auto; padding-top: 50px; border-right: 40px dotted black; border-left: 40px dotted black; border-top: 2px groove #F90; text-align: center; font-size: 12px; clear: left;}

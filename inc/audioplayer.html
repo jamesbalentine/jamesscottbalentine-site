@@ -1,0 +1,146 @@
+<link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-horizontal.css">
+<link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script src="http://jplayer.org/latest/js/jquery.jplayer.min.js"></script>
+<style type="text/css">
+	div .media {width: auto;}
+	.media-image-wrapper {width: 70px !important;}
+	.media li {float: left; margin-left: 5px;}
+	.media ul {clear: right;}
+	.media img {margin: 8px !important;}
+	.media-details {width: 425px !important; padding-left: 6px; margin-right: 40px;}
+	.media-title {padding-top: 6px;}
+	.media-title-suffix {padding: 6px 0 0 6px; clear: right;}
+	.media-instruments {padding-top: 3px; border-bottom: 1px solid gray; font-size: 14px; line-height: 15px; clear: left;}
+	.media-instruments-prefix {text-decoration: underline;}
+	.media-performances {padding-top: 3px; font-size: 14px; line-height: 15px; clear: left;}
+	.media-performances-prefix {text-decoration: underline;}
+	.pauseButton {border-radius: 10px; margin: 15px; background: url('http://guildhian.com/staging/Images/Pausebutton.jpg') no-repeat scroll center center; background-size: 40px 40px; width: 40px; height: 40px; display: block;}
+	.playButton {border-radius: 10px; margin: 15px; background: url('http://guildhian.com/staging/Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 40px 40px; width: 40px; height: 40px; display: block;}
+	.playerButton {width: 40px !important;}
+	a.browse {margin-top: 18px;}
+	a.prev.browse.left {margin-left: 148px;}
+	#scrollable {height: 70px;}
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
+      $("#jquery_jplayer_2").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
+      $("#jquery_jplayer_3").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
+    });
+    function playerPause(buttonid) {
+    	$("#jquery_"+buttonid).jPlayer('pauseOthers');
+    	$("#jquery_"+buttonid).jPlayer('play');
+    	$(".playerButton").removeClass("pauseButton");
+    	$(".playerButton").addClass("playButton");
+    	$(".playerButton").each(function(){this.onclick=function(){playerPause(this.id);}});
+    	$("#"+buttonid).addClass("pauseButton");
+    	$("#"+buttonid).removeClass("playButton");
+    	document.getElementById(buttonid).onclick=function(){playerPlay(buttonid);};
+    }
+    function playerPlay(buttonid) {
+    	$("#jquery_"+buttonid).jPlayer('pauseOthers');
+    	$("#jquery_"+buttonid).jPlayer('pause');
+    	$(".playerButton").removeClass("pauseButton");
+    	$(".playerButton").addClass("playButton");
+    	document.getElementById(buttonid).onclick=function(){playerPause(buttonid);};
+    }
+</script>
+<a class="prev browse left"></a>
+<div class="scrollable" id="scrollable" >
+	<div class="items">
+		<div class="media">
+			<div class="media-image-wrapper media">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div id="jplayer_1" class="playerButton playButton" onclick=playerPause(id); ></div>
+			</div>
+			<div class="media-details">
+				<div class="media-title media">D&ugrave;n &Egrave;ideann Blogh</div>
+				<div class="media-title-suffix media"> - Double Concerto</div>
+				<div class="media-instruments media">
+					<div class="media-instruments-prefix media">Instruments:</div>
+					<li>clarinet</li>
+					<li>clarinet</li>
+					<li>clarinet</li>
+					<li>clarinet</li>
+					<li>bassoon</li>
+					<li>bassoon</li>
+					<li>bassoon</li>
+					<li>bassoon</li>
+					<li>chamber orchestra</li>
+				</div>
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-image-wrapper media">
+				<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+				<div id="jplayer_2" class="playerButton playButton" onclick=playerPause(id); ></div>
+			</div>
+			<div class="media-details">
+				<div class="media-title media">Triqueta</div>
+				<div class="media-title-suffix media"> - Double Concerto</div>
+				<div class="media-instruments media">
+					<div class="media-instruments-prefix media">Instruments:</div>
+					<li>horn</li>
+					<li>guitar</li>
+					<li>piano</li>
+					<li>percussion</li>
+					<li>strings</li>
+				</div>
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-image-wrapper media">
+				<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+				<div id="jplayer_3" class="playerButton playButton" onclick=playerPause(id); ></div>
+			</div>
+			<div class="media-details">
+				<div class="media-title media">Triqueta 3</div>
+				<div class="media-title-suffix media"> - Triple Concerto</div>
+				<div class="media-instruments media">
+					<div class="media-instruments-prefix media">Instruments:</div>
+					<li>all</li>
+					<li>guitar</li>
+					<li>piano</li>
+					<li>percussion</li>
+					<li>strings</li>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<a class="next browse right"></a>
+<script>
+$(function() {
+  // initialize scrollable
+  $(".scrollable").scrollable();
+});
+</script>

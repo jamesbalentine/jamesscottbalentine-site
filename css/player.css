@@ -1,0 +1,16 @@
+div.media {width: auto !important;}
+.media-image-wrapper {}
+li.media {float: left; margin-left: 5px;}
+ul.media {clear: right;}
+img.media {margin: 8px !important;}
+.media-details {width: 425px !important; padding-left: 6px;}
+.media-title {padding-top: 6px;}
+.media-title-suffix {padding: 6px 0 0 6px; clear: right;}
+.media-instruments {padding-top: 3px; border-bottom: 1px solid gray; font-size: 14px; line-height: 15px; clear: left;}
+.media-instruments-prefix {text-decoration: underline;}
+.media-performances {padding-top: 3px; font-size: 14px; line-height: 15px; clear: left;}
+.media-performances-prefix {text-decoration: underline;}
+.pauseButton {border-radius: 10px; margin: 15px; background: url('../Images/Pausebutton.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
+.playButton {border-radius: 10px; margin: 15px; background: url('../Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
+.playerButton {width: 80px !important;}
+#scrollable {background-color: black; color: white;}

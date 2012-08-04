@@ -1,48 +1,17 @@
+<?php
+	header('X-Frame-Options: GUILDHIAN'); 
+?>
 <html>
 	<head>
-		<?php include 'inc/scripts.php'; ?>
+		<link rel="stylesheet" type="text/css" href="css/player.css">
+		<script type="text/javascript">
+			window.onbeforeunload = null;
+		</script>
 	</head>
-	<body>
-		<div class='container'>
-			<?php 
-				$page = filter_var($_GET["page"], FILTER_SANITIZE_NUMBER_INT);
-
-				switch($page)
-				{
-				    case '1';
-				    	include 'inc/header.php';
-				        include 'inc/catalog.php';
-				    break;
-				    case '2';
-				    	include 'inc/header.php';
-				        include 'inc/news.php'; 
-				    break;
-				    case '3';
-				    	include 'inc/header.php';
-				        include 'inc/biography.php'; 
-				    break;
-				    case '4';
-				    	include 'inc/header.php';
-				        include 'inc/scorespdf.php'; 
-				    break;
-				    case '5';
-				    	include 'inc/header.php';
-				    	include 'inc/listen.php';
-				    break;
-				    case '6';
-				    	include 'inc/header.php';
-				    	include 'inc/links.php';
-				    break;
-				    case '7';
-				    	include 'inc/header.php';
-				    	include 'inc/contact.php';
-				    break;
-				    default;
-				    	include 'inc/homepage.php';
-				    break;
-				}
-			?>
+	<body style="overflow: hidden;">
+		<div style="position: fixed; bottom: 0; left: 22.4%; z-index: 1; padding: 10px 0 10px 0; margin: 0;">
+			<?php include "inc/audioplayer.html"; ?>
 		</div>
-		<?php include 'inc/footer.php'; ?>
+		<iframe id="inner" name="inner" src="inc/innerframe.php" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 	</body>
 </html>

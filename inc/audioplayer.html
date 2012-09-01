@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-<script src="http://jplayer.org/latest/js/jquery.jplayer.min.js"></script>
+<script src="./js/jquery.jplayer.min.js"></script>
 <style type="text/css">
 	div .media {width: auto;}
 	.media-image-wrapper {width: 70px !important;}
@@ -28,32 +28,29 @@
       $("#jquery_jplayer_1").jPlayer({
         ready: function () {
           $(this).jPlayer("setMedia", {
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            mp3: "./audio/Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%202.%20Portobello%20Beach.mp3"
           });
         },
-        swfPath: "/js",
-        supplied: "m4a, oga"
+        swfPath: "./js",
+        supplied: "mp3"
       });
       $("#jquery_jplayer_2").jPlayer({
         ready: function () {
           $(this).jPlayer("setMedia", {
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            mp3: "./audio/Triqueta/triqueta%20mvmt%202.mp3"
           });
         },
-        swfPath: "/js",
-        supplied: "m4a, oga"
+        swfPath: "./js",
+        supplied: "mp3"
       });
       $("#jquery_jplayer_3").jPlayer({
         ready: function () {
           $(this).jPlayer("setMedia", {
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            mp3: "./audio/Monk%20through%20a%20glass%20darkly.mp3"
           });
         },
-        swfPath: "/js",
-        supplied: "m4a, oga"
+        swfPath: "./js",
+        supplied: "mp3"
       });
     });
     function playerPause(buttonid) {
@@ -123,7 +120,7 @@
 				<div id="jplayer_3" class="playerButton playButton" onclick=playerPause(id); ></div>
 			</div>
 			<div class="media-details">
-				<div class="media-title media">Triqueta 3</div>
+				<div class="media-title media">Monk Through a Glass Darkly</div>
 				<div class="media-title-suffix media"> - Triple Concerto</div>
 				<div class="media-instruments media">
 					<div class="media-instruments-prefix media">Instruments:</div>

@@ -24,35 +24,6 @@
 	#scrollable {height: 70px;}
 </style>
 <script type="text/javascript">
-    $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            mp3: "./audio/Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%202.%20Portobello%20Beach.mp3"
-          });
-        },
-        swfPath: "./js",
-        supplied: "mp3"
-      });
-      $("#jquery_jplayer_2").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            mp3: "./audio/Triqueta/triqueta%20mvmt%202.mp3"
-          });
-        },
-        swfPath: "./js",
-        supplied: "mp3"
-      });
-      $("#jquery_jplayer_3").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            mp3: "./audio/Monk%20through%20a%20glass%20darkly.mp3"
-          });
-        },
-        swfPath: "./js",
-        supplied: "mp3"
-      });
-    });
     function playerPause(buttonid) {
     	$("#jquery_"+buttonid).jPlayer('pauseOthers');
     	$("#jquery_"+buttonid).jPlayer('play');
@@ -74,64 +45,60 @@
 <a class="prev browse left"></a>
 <div class="scrollable" id="scrollable" >
 	<div class="items">
-		<div class="media">
-			<div class="media-image-wrapper media">
-				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				<div id="jplayer_1" class="playerButton playButton" onclick=playerPause(id); ></div>
-			</div>
-			<div class="media-details">
-				<div class="media-title media">D&ugrave;n &Egrave;ideann Blogh</div>
-				<div class="media-title-suffix media"> - Double Concerto</div>
-				<div class="media-instruments media">
-					<div class="media-instruments-prefix media">Instruments:</div>
-					<li>clarinet</li>
-					<li>clarinet</li>
-					<li>clarinet</li>
-					<li>clarinet</li>
-					<li>bassoon</li>
-					<li>bassoon</li>
-					<li>bassoon</li>
-					<li>bassoon</li>
-					<li>chamber orchestra</li>
-				</div>
-			</div>
-		</div>
-		<div class="media">
-			<div class="media-image-wrapper media">
-				<div id="jquery_jplayer_2" class="jp-jplayer"></div>
-				<div id="jplayer_2" class="playerButton playButton" onclick=playerPause(id); ></div>
-			</div>
-			<div class="media-details">
-				<div class="media-title media">Triqueta</div>
-				<div class="media-title-suffix media"> - Double Concerto</div>
-				<div class="media-instruments media">
-					<div class="media-instruments-prefix media">Instruments:</div>
-					<li>horn</li>
-					<li>guitar</li>
-					<li>piano</li>
-					<li>percussion</li>
-					<li>strings</li>
-				</div>
-			</div>
-		</div>
-		<div class="media">
-			<div class="media-image-wrapper media">
-				<div id="jquery_jplayer_3" class="jp-jplayer"></div>
-				<div id="jplayer_3" class="playerButton playButton" onclick=playerPause(id); ></div>
-			</div>
-			<div class="media-details">
-				<div class="media-title media">Monk Through a Glass Darkly</div>
-				<div class="media-title-suffix media"> - Triple Concerto</div>
-				<div class="media-instruments media">
-					<div class="media-instruments-prefix media">Instruments:</div>
-					<li>all</li>
-					<li>guitar</li>
-					<li>piano</li>
-					<li>percussion</li>
-					<li>strings</li>
-				</div>
-			</div>
-		</div>
+		<?php
+		    $doc = new DOMDocument();
+		    $doc->load( 'inc/catalog.xml' );
+		    $index = 0;
+
+		    $sections = $doc->getElementsByTagName( "composition" );
+
+			foreach( $sections as $key=>$section ) {
+			        $sectionTitle = filter_var($section->getAttribute('category'), FILTER_SANITIZE_STRING);
+			        $compositions = $section->getElementsByTagName( "composition" );
+		        foreach( $compositions as $composition ) {
+		        	$name = filter_var($composition->getElementsByTagName("name")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
+		            $description = filter_var($composition->getElementsByTagName("description")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
+		            
+		        	echo "<div class='media'>
+						<div class='media-image-wrapper media'>
+							<div id='jquery_jplayer_$index' class='jp-jplayer'></div>
+							<div id='jplayer_$index' class='playerButton playButton' onclick=playerPause(id); ></div>
+						</div>
+						<div class='media-details'>
+							<div class='media-title media'>$name</div>
+							<div class='media-title-suffix media'> - $sectionTitle</div>
+							<div class='media-instruments media'>
+								<div class='media-description media'>$description</div>
+							</div>
+						</div>
+					</div>";
+		            $index++;
+		        }
+		    }
+
+		    echo "<script type='text/javascript'>
+		    	$(document).ready(function(){";
+		    $compositions2 = $doc->getElementsByTagName( "composition" );
+	    	foreach( $compositions2 as $keyindex=>$composition2 ) {
+	    		$audiourls = $composition2->getElementsByTagName( "audiourl" );
+	    		$audiourl = null;
+	    		foreach( $audiourls as $audioIndex=>$audiourl ) {
+                    $audiourl = filter_var($composition2->getElementsByTagName("audiourl")->item(0)->getAttribute('value'), FILTER_SANITIZE_STRING);
+                }
+
+	    		echo "
+		        	$('#jquery_jplayer_$keyindex').jPlayer({
+			        ready: function () {
+			          $(this).jPlayer('setMedia', {
+			            mp3: '$audiourl'
+			          });
+			        },
+			        swfPath: './js',
+			        supplied: 'mp3'
+			      });";
+			}
+			echo "});";
+		?>
 	</div>
 </div>
 <a class="next browse right"></a>

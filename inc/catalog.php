@@ -37,7 +37,7 @@
                 foreach( $audiourls as $audioIndex=>$audiourl ) {
                     $audiolink = filter_var($audiourl->getAttribute('value'), FILTER_SANITIZE_STRING);
                     ($audiourls->length > 1) ? $audioIndex++ : $audioIndex = null;
-                    echo "<div class='audiourl'><a href='$audiolink'>$name sample $audioIndex</a></div>";
+                    echo "<div class='audiourl'><a href='../audio/$audiolink'>$name sample $audioIndex</a></div>";
                 }
                 foreach( $scores as $scoreIndex=>$score ) {
                     $score = filter_var($composition->getElementsByTagName("score")->item(0)->getAttribute('value'), FILTER_SANITIZE_STRING);

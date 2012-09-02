@@ -50,7 +50,7 @@
 		    $doc->load( 'inc/catalog.xml' );
 		    $index = 0;
 
-		    $sections = $doc->getElementsByTagName( "composition" );
+		    $sections = $doc->getElementsByTagName( "section" );
 
 			foreach( $sections as $key=>$section ) {
 			        $sectionTitle = filter_var($section->getAttribute('category'), FILTER_SANITIZE_STRING);
@@ -90,14 +90,15 @@
 		        	$('#jquery_jplayer_$keyindex').jPlayer({
 			        ready: function () {
 			          $(this).jPlayer('setMedia', {
-			            mp3: '$audiourl'
+			            mp3: 'audio/$audiourl'
 			          });
 			        },
 			        swfPath: './js',
-			        supplied: 'mp3'
+			        supplied: 'mp3',
+		            preload: 'none'		
 			      });";
 			}
-			echo "});";
+			echo "});</script>";
 		?>
 	</div>
 </div>

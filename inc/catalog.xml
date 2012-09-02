@@ -4,18 +4,18 @@
 		<composition>
 			<name>"Don Eidan Blogh" (2006)</name>
 			<description>Double concerto for clarinet, bassoon and chamber orchestra. Written for clarinet for Robert Walzel and bassoon for Scott Walzel. Premiered at the Utah Arts Festival. Duration: 14 minutes, 30 seconds</description>
-			<audiourl value="../audio/Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%201.%20Auld%20Reekie.mp3"/>
-			<audiourl value="../audio/Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%202.%20Portobello%20Beach.mp3"/>
-			<audiourl value="../audio/Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%203.%20Lothian%2026.mp3"/>
+			<audiourl value="Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%201.%20Auld%20Reekie.mp3"/>
+			<audiourl value="Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%202.%20Portobello%20Beach.mp3"/>
+			<audiourl value="Dun%20Eideann%20Blogh/Dun%20Eideann%20Blogh%203.%20Lothian%2026.mp3"/>
 			<score value="../sheetmusic/Dun%20Eideann%20Blogh%20Score.pdf"/>
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"Triqueta" (2008)</name>
 			<description>Double concerto for horn, guitar and chamber orchestra. Commissioned for the Southwest Guitar Festival, 2008 for Matthew Dunne, guitar and Michael Gast on horn. Duration: 16 minutes</description>
-			<audiourl value="../audio/Triqueta/triqueta%20mvmt%201.mp3"/>
-			<audiourl value="../audio/Triqueta/triqueta%20mvmt%202.mp3"/>
-			<audiourl value="../audio/Triqueta/triqueta%20mvmt%203.mp3"/>
+			<audiourl value="Triqueta/triqueta%20mvmt%201.mp3"/>
+			<audiourl value="Triqueta/triqueta%20mvmt%202.mp3"/>
+			<audiourl value="Triqueta/triqueta%20mvmt%203.mp3"/>
 			<score value="../sheetmusic/Triqueta.pdf"/>
 			<price>$20</price>
 		</composition>
@@ -156,14 +156,14 @@
 		<composition>
 			<name>"Monk, Through a Glass Darkly" (2002)</name>
 			<description>For clarinet sextet. Commissioned by Texas Clarinet Consort for Clarinetfest 2002, Stockholm</description>
-			<audiourl value="../audio/Monk%20through%20a%20glass%20darkly.mp3"/>
+			<audiourl value="Monk%20through%20a%20glass%20darkly.mp3"/>
 			<score value="test.pdf"/>
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"A Toot in Ninesia" (1996)</name>
 			<description>For clarinet sextet. Published by Cimarron Music. Commissioned by the Texas Clarinet Consort for ClarinetFest 1996, Paris, France. Duration: 6 minutes</description>
-			<audiourl value="../audio/Toot%20in%20Ninesia.mp3"/>
+			<audiourl value="Toot%20in%20Ninesia.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
@@ -177,15 +177,15 @@
 		<composition>
 			<name>"Nine Wild Exotic Dances" (1999)</name>
 			<description>For clarinet and piano. Commissioned by Robert Walzel for ClarinetFest 1999, Ostende, Belgium. Duration: 18 minutes</description>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%201%20Cielito.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%202%20Ishi%201.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%203%20Notturno.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%204%20Danzon.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%205%20Yarevi.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%206%20Dreher.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%207%20Ishi%202.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%208%20Obertas.mp3"/>
-			<audiourl value="../audio/Nine%20Dances/Nine%20Dances%209%20Nineria.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%201%20Cielito.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%202%20Ishi%201.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%203%20Notturno.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%204%20Danzon.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%205%20Yarevi.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%206%20Dreher.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%207%20Ishi%202.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%208%20Obertas.mp3"/>
+			<audiourl value="Nine%20Dances/Nine%20Dances%209%20Nineria.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
@@ -193,9 +193,9 @@
 			<name>"March, Strathspey and Reel" (2003)</name>
 			<description>For clarinet and piano. Commissioned by The Barlow Endowment for ClarinetFest 2003 Salt Lake City, Utah. Premiered by Jaren Hinckley. Duration: 8 minutes</description>
 			<audiourl value="test.mp3"/>
-			<audiourl value="../audio/MarchStrathspeyReel/MarchStrathspeyReel%20Fanny%20Burney.mp3"/>
-			<audiourl value="../audio/MarchStrathspeyReel/MarchStrathspeyReel%20Jaren's%20Reel.mp3"/>
-			<audiourl value="../audio/MarchStrathspeyReel/MarchStrathspeyReel%20McKinnon's%20Ceilidh.mp3"/>
+			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20Fanny%20Burney.mp3"/>
+			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20Jaren's%20Reel.mp3"/>
+			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20McKinnon's%20Ceilidh.mp3"/>
 			<score value="../sheetmusic/MarchStrathspey%20Reel%20Cover%20Pages.pdf"/>
 			<score value="../sheetmusic/MarchStrathspey%20Reel%20Title%20Page.pdf"/>
 			<score value="../sheetmusic/MarchStrathspeyReel%20Clar.pdf"/>
@@ -209,7 +209,7 @@
 		<composition>
 			<name>"The Charlie Effect" (2004)</name>
 			<description>For clarient, bass clarinet and piano. Commissioned by Elizabeth Crawford Kilpatrick for ClarinetFest 2004 Washington D.C. Duration: 5 minutes</description>
-			<audiourl value="../audio/Charlie%20Effect.mp3"/>
+			<audiourl value="Charlie%20Effect.mp3"/>
 			<score value="../sheetmusic/Charlie%20Effect%20BsCl%20(4p).pdf"/>
 			<score value="../sheetmusic/Charlie%20Effect%20Cl%20(4p).pdf"/>
 			<score value="../sheetmusic/Charlie%20Effect%20Pno%20Score%20(15p).pdf"/>
@@ -226,14 +226,14 @@
 		<composition>
 			<name>"In A Bright Room" (1991)</name>
 			<description>Published by Cimarron Music for clarinet and bassoon. Commissioned by Robert Walzel (clarinet) and Scott Walzel (bassoon). Duration: 4 minutes</description>
-			<audiourl value="../audio/01%20In%20A%20Bright%20Room.mp3"/>
+			<audiourl value="01%20In%20A%20Bright%20Room.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"Devil's Advice to Story-Tellers" (1986)</name>
 			<description>Solo unaccompanied clarinet(s). Commissioned by Robert Walzel for doctor recital, UNT. Duration: 8 minutes</description>
-			<audiourl value="../audio/Devils%20Advice.mp3"/>
+			<audiourl value="Devils%20Advice.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
@@ -247,9 +247,9 @@
 		<composition>
 			<name>"Piano Sonata No. 1" (1995)</name>
 			<description>For solo piano. Written for Roger Steptoe. Premiered at American Landmark Festival Performances at Central Presbyterian Church, Manhattan, New York and Smith Opera House, Geneva, New York.</description>
-			<audiourl value="../audio/PianoSonata1/Piano%20Sonata%201%20Mvt%201.mp3"/>
-			<audiourl value="../audio/PianoSonata1/Piano%20Sonata%201%20Mvt%202.mp3"/>
-			<audiourl value="../audio/PianoSonata1/Piano%20Sonata%201%20Mvt%203.mp3"/>
+			<audiourl value="PianoSonata1/Piano%20Sonata%201%20Mvt%201.mp3"/>
+			<audiourl value="PianoSonata1/Piano%20Sonata%201%20Mvt%202.mp3"/>
+			<audiourl value="PianoSonata1/Piano%20Sonata%201%20Mvt%203.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
@@ -263,19 +263,19 @@
 		<composition>
 			<name>"Les Quatre Coins" (2005)</name>
 			<description>For flute, oboe, cello and piano. Commissioned by the Hemisphere Quartet and Ensemble in Roxane, Bergerac, France.</description>
-			<audiourl value="../audio/QuatresCoins/Quatre%20Coins%20mvt%201.mp3"/>
-			<audiourl value="../audio/QuatresCoins/Quatre%20Coins%20mvt%202.mp3"/>
-			<audiourl value="../audio/QuatresCoins/Quatre%20Coins%20mvt%203.mp3"/>
-			<audiourl value="../audio/QuatresCoins/Quatre%20Coins%20mvt%204.mp3"/>
+			<audiourl value="QuatresCoins/Quatre%20Coins%20mvt%201.mp3"/>
+			<audiourl value="QuatresCoins/Quatre%20Coins%20mvt%202.mp3"/>
+			<audiourl value="QuatresCoins/Quatre%20Coins%20mvt%203.mp3"/>
+			<audiourl value="QuatresCoins/Quatre%20Coins%20mvt%204.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"The Three Billy Goats Gruff" (2004)</name>
 			<description>For string quartet and narrator. Commissioned by Cactus Pear Music Festival. Translated into Flemish for performance at Conservatory aan Zee, Ostende, Belgium 2011.</description>
-			<audiourl value="../audio/Billy%20Goats/Billy%20Goats%202%20Opening.mp3"/>
-			<audiourl value="../audio/Billy%20Goats/Billy%20Goats%203%20Middle.mp3"/>
-			<audiourl value="../audio/Billy%20Goats/Billy%20Goats%204%20Ending.mp3"/>
+			<audiourl value="Billy%20Goats/Billy%20Goats%202%20Opening.mp3"/>
+			<audiourl value="Billy%20Goats/Billy%20Goats%203%20Middle.mp3"/>
+			<audiourl value="Billy%20Goats/Billy%20Goats%204%20Ending.mp3"/>
 			<score value="../sheetmusic/BillyGoats2009%20Score.pdf"/>
 			<price>$20</price>
 		</composition>
@@ -296,28 +296,28 @@
 		<composition>
 			<name>"The Tempest" (1999)</name>
 			<description>Song cycle for soprano, flute, clarinet, cello and piano. Commissioned by St. Mary's Hall Children's choir, Douglas Boyer, Director.</description>
-			<audiourl value="../audio/Tempest/Tempest%201%20Yellow%20Sands.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%202%20Full%20Fathom%20Five%20.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%203%20Where%20the%20Bee%20Sucks.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%204%20Calibans%20Dream.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%205%20Revels.mp3"/>
+			<audiourl value="Tempest/Tempest%201%20Yellow%20Sands.mp3"/>
+			<audiourl value="Tempest/Tempest%202%20Full%20Fathom%20Five%20.mp3"/>
+			<audiourl value="Tempest/Tempest%203%20Where%20the%20Bee%20Sucks.mp3"/>
+			<audiourl value="Tempest/Tempest%204%20Calibans%20Dream.mp3"/>
+			<audiourl value="Tempest/Tempest%205%20Revels.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"Seranata" (1996)</name>
 			<description>For flute, English horn and guitar. Commissioned by the Nova Trio.</description>
-			<audiourl value="../audio/Serenata/1.%20Serenata.mp3"/>
-			<audiourl value="../audio/Serenata/2.%20Serenata.mp3"/>
-			<audiourl value="../audio/Serenata/3.%20Serenata.mp3"/>
-			<audiourl value="../audio/Serenata/4.%20Serenata.mp3"/>
+			<audiourl value="Serenata/1.%20Serenata.mp3"/>
+			<audiourl value="Serenata/2.%20Serenata.mp3"/>
+			<audiourl value="Serenata/3.%20Serenata.mp3"/>
+			<audiourl value="Serenata/4.%20Serenata.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
 		<composition>
 			<name>"Five Spirituals" (1995)</name>
 			<description>For baritone voice and cello. Written for Timothy Jones and Judith Vander Weg.</description>
-			<audiourl value="../audio/Five%20Spirituals.mp3"/>
+			<audiourl value="Five%20Spirituals.mp3"/>
 			<score value="../sheetmusic/Five%20Spirituals%20score.pdf"/>
 			<score value="../sheetmusic/Five%20SpiritualsTitle%20Page.pdf"/>
 			<price>$20</price>
@@ -367,10 +367,10 @@
 		<composition>
 			<name>"Postcard Songs" (1994)</name>
 			<description>For medium low voice and piano: text by Dean Curtis.</description>
-			<audiourl value="../audio/Postcard%20Songs/1.%20Friends%20Benign.mp3"/>
-			<audiourl value="../audio/Postcard%20Songs/2.%20Rise%20and%20Shine.mp3"/>
-			<audiourl value="../audio/Postcard%20Songs/3.%20Creek%20Ripples%20Shine.mp3"/>
-			<audiourl value="../audio/Postcard%20Songs/4.%20Neon%20Shine.mp3"/>
+			<audiourl value="Postcard%20Songs/1.%20Friends%20Benign.mp3"/>
+			<audiourl value="Postcard%20Songs/2.%20Rise%20and%20Shine.mp3"/>
+			<audiourl value="Postcard%20Songs/3.%20Creek%20Ripples%20Shine.mp3"/>
+			<audiourl value="Postcard%20Songs/4.%20Neon%20Shine.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
@@ -408,11 +408,11 @@
 		<composition>
 			<name>"The Tempest" (1983)</name>
 			<description>Seven songs and incidental music: commissioned for production of Shakespeare's The Tempest.</description>
-			<audiourl value="../audio/Tempest/Tempest%201%20Yellow%20Sands.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%202%20Full%20Fathom%20Five%20.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%203%20Where%20the%20Bee%20Sucks.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%204%20Calibans%20Dream.mp3"/>
-			<audiourl value="../audio/Tempest/Tempest%205%20Revels.mp3"/>
+			<audiourl value="Tempest/Tempest%201%20Yellow%20Sands.mp3"/>
+			<audiourl value="Tempest/Tempest%202%20Full%20Fathom%20Five%20.mp3"/>
+			<audiourl value="Tempest/Tempest%203%20Where%20the%20Bee%20Sucks.mp3"/>
+			<audiourl value="Tempest/Tempest%204%20Calibans%20Dream.mp3"/>
+			<audiourl value="Tempest/Tempest%205%20Revels.mp3"/>
 			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>

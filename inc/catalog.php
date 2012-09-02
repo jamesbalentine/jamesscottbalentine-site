@@ -27,12 +27,13 @@
             $price = filter_var($composition->getElementsByTagName("price")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
             
             $playerindex = ($audiourls->length > 0) ? $playerindex+1 : $playerindex;
-            $onclick = ($audiourls->length > 0) ? "onclick='parent.scrollToSong($playerindex);'" : " " ;
+            $onclick = ($audiourls->length > 0) ? "<div class='catalog-composition-links-player' onclick='parent.scrollToSong($playerindex);'></div>" : " " ;
             echo "
             <div class='catalog-composition'>
-            	<div class='catalog-composition-title' $onclick >$name</div>
+            	<div class='catalog-composition-title'>$name $onclick</div>
             	<div class='catalog-composition-description'>$description</div>
-                <div class='catalog-composition-links'>";
+                <div class='catalog-composition-links'>
+                ";
                 foreach( $audiourls as $audioIndex=>$audiourl ) {
                     $audiolink = filter_var($audiourl->getAttribute('value'), FILTER_SANITIZE_STRING);
                     ($audiourls->length > 0) ? $audioIndex++ : $audioIndex = null;
@@ -46,6 +47,7 @@
                 echo "
                     <div class='price'>For parts or prices, <a href='#page=7'>inquire</a></div>
                 </div>
+                
             </div>
             ";
         }

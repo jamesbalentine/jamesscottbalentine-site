@@ -1,4 +1,4 @@
-.audiourl {width: 225px;}
+.audiourl {width: 250px;}
 
 .catalog-composition {display: block; position: relative; padding: 10px; border-top: 1px solid #F90; min-height: 110px;}
 .catalog-composition-description {display: inline-block; width:390px; padding: 0 10px 0 10px; vertical-align: top;}
@@ -12,4 +12,4 @@
 .catalog-section-title, a.catalog-section-title, .catalog-section-title a:visited {display: block; clear: both; padding: 10px 0 5px 70px; font-weight: bold !important; font-size: 18px !important; color: #f90;}
 
 .price {text-align: right;}
-.score {}​
+.score {width: 242px;}

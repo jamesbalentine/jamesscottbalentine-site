@@ -7,6 +7,7 @@
 		<script type="text/javascript">
 			function scrollToSong(songindex) {
 				$("div.scrollable").scrollable().seekTo(songindex);
+				playerPause("jplayer_"+songindex);
 			}
 		</script>
 	</head>

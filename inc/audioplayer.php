@@ -48,7 +48,7 @@
 		<?php
 		    $doc = new DOMDocument();
 		    $doc->load( 'inc/catalog.xml' );
-		    $index = 0;
+		    $index = -1;
 
 		    $sections = $doc->getElementsByTagName( "section" );
 
@@ -58,35 +58,41 @@
 		        foreach( $compositions as $composition ) {
 		        	$name = filter_var($composition->getElementsByTagName("name")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
 		            $description = filter_var($composition->getElementsByTagName("description")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
-		            
-		        	echo "<div class='media'>
-						<div class='media-image-wrapper media'>
-							<div id='jquery_jplayer_$index' class='jp-jplayer'></div>
-							<div id='jplayer_$index' class='playerButton playButton' onclick=playerPause(id); ></div>
-						</div>
-						<div class='media-details'>
-							<div class='media-title media'>$name</div>
-							<div class='media-title-suffix media'> - $sectionTitle</div>
-							<div class='media-instruments media'>
-								<div class='media-description media'>$description</div>
+		            $audiourls = $composition->getElementsByTagName( "audiourl" );
+
+		            $index = ($audiourls->length > 0) ? $index+1 : $index;
+
+		        	if($audiourls->length > 0) {
+		        		echo "<div class='media'>
+							<div class='media-image-wrapper media'>
+								<div id='jquery_jplayer_$index' class='jp-jplayer'></div>
+								<div id='jplayer_$index' class='playerButton playButton' onclick=playerPause(id); ></div>
 							</div>
-						</div>
-					</div>";
-		            $index++;
+							<div class='media-details'>
+								<div class='media-title media'>$name</div>
+								<div class='media-title-suffix media'> - $sectionTitle</div>
+								<div class='media-instruments media'>
+									<div class='media-description media'>$description</div>
+								</div>
+							</div>
+						</div>";
+					}
 		        }
 		    }
 
 		    echo "<script type='text/javascript'>
 		    	$(document).ready(function(){";
 		    $compositions2 = $doc->getElementsByTagName( "composition" );
-	    	foreach( $compositions2 as $keyindex=>$composition2 ) {
+		    $keyindex = -1;
+	    	foreach( $compositions2 as $composition2 ) {
 	    		$audiourls = $composition2->getElementsByTagName( "audiourl" );
-	    		$audiourl = null;
 	    		foreach( $audiourls as $audioIndex=>$audiourl ) {
                     $audiourl = filter_var($composition2->getElementsByTagName("audiourl")->item(0)->getAttribute('value'), FILTER_SANITIZE_STRING);
                 }
 
-	    		echo "
+                $keyindex = ($audiourls->length > 0) ? $keyindex+1 : $keyindex;
+
+	    		$playeritem = ($audiourls->length > 0) ? "
 		        	$('#jquery_jplayer_$keyindex').jPlayer({
 			        ready: function () {
 			          $(this).jPlayer('setMedia', {
@@ -95,8 +101,10 @@
 			        },
 			        swfPath: './js',
 			        supplied: 'mp3',
-		            preload: 'none'		
-			      });";
+					preload: 'none'		
+			      });" : " ";
+	    		
+	    		echo $playeritem; 
 			}
 			echo "});</script>";
 		?>

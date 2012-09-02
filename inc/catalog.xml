@@ -157,7 +157,7 @@
 			<name>"Monk, Through a Glass Darkly" (2002)</name>
 			<description>For clarinet sextet. Commissioned by Texas Clarinet Consort for Clarinetfest 2002, Stockholm</description>
 			<audiourl value="Monk%20through%20a%20glass%20darkly.mp3"/>
-			<score value="test.pdf"/>
+			<!-- <score value="test.pdf"/> -->
 			<price>$20</price>
 		</composition>
 		<composition>
@@ -192,7 +192,6 @@
 		<composition>
 			<name>"March, Strathspey and Reel" (2003)</name>
 			<description>For clarinet and piano. Commissioned by The Barlow Endowment for ClarinetFest 2003 Salt Lake City, Utah. Premiered by Jaren Hinckley. Duration: 8 minutes</description>
-			<audiourl value="test.mp3"/>
 			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20Fanny%20Burney.mp3"/>
 			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20Jaren's%20Reel.mp3"/>
 			<audiourl value="MarchStrathspeyReel/MarchStrathspeyReel%20McKinnon's%20Ceilidh.mp3"/>

@@ -20,7 +20,7 @@
 	.playButton {border-radius: 10px; margin: 15px; background: url('http://guildhian.com/staging/Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 40px 40px; width: 40px; height: 40px; display: block;}
 	.playerButton {width: 40px !important;}
 	a.browse {margin-top: 18px;}
-	a.prev.browse.left {margin-left: 148px;}
+	a.prev.browse.left {margin-left: 20%;}
 	#scrollable {height: 70px;}
 </style>
 <script type="text/javascript">

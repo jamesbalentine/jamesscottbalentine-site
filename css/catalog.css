@@ -3,8 +3,10 @@
 .catalog-composition {display: block; position: relative; padding: 10px; border-top: 1px solid #F90; min-height: 110px;}
 .catalog-composition-description {display: inline-block; width:390px; padding: 0 10px 0 10px; vertical-align: top;}
 .catalog-composition-links {display: inline-block; position: relative; right: 5px; top: 5px; width: 210px;}
-.catalog-composition-links-player {background: url("../Images/Playbutton.jpg"); background-size: 25px 25px; width: 25px; height: 25px; clear: left; margin-top: 10px;}
-.catalog-composition-title {display: inline-block; vertical-align: top; width: 200px; text-decoration: underline; clear: left;}
+.catalog-composition-links-player {background: url("../Images/power-tab-icons-vector-800.jpeg") no-repeat -137px -482px; width: 100%; height: 100%;}
+.catalog-composition-left {display: inline-block; vertical-align: top; width: 200px; clear: left;}
+.catalog-composition-left-background {margin-top: 3px; border: 2px solid #f90; border-radius: 5px; clear: left; width: 30px; height: 30px;}
+.catalog-composition-title {text-decoration: underline;}
 
 .catalog-section {width: 850px; margin-left: auto; margin-right: auto;}
 .catalog-section-title-menulist {margin-left: -100px; position: fixed;}
@@ -12,5 +14,5 @@
 .catalog-section-title-menu a, .catalog-section-title-menu a:visited {color: white; background-color: #f90;}
 .catalog-section-title, a.catalog-section-title, .catalog-section-title a:visited {display: block; clear: both; padding: 10px 0 5px 70px; font-weight: bold !important; font-size: 18px !important; color: #f90;}
 
-.price {text-align: right;}
+.price {border-style: solid; border-color: #F90; border-width: 1px 0 1px 0; margin-top: 10px; text-align: left;}
 .score {width: 242px;}

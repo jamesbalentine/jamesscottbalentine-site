@@ -15,7 +15,7 @@ a:hover {text-decoration: underline;}
 #books-image {float: left; padding: 10px 0;}
 #bio {padding: 5px; background-color: black; width: 1080px; margin-left: auto; margin-right: auto; color: white;}
 #bio-header{}
-#bio-header-image img {display: inline-block; height: 300px;}
+#bio-header-image, #bio-header-image img {display: inline-block; height: 300px;}
 #bio-header-stats {display: inline-block;}
 #bio-header-stats-commissions {border-top: 1px solid #3A3030; width: 800px; border-bottom: 1px solid #3A3030;}
 #bio-header-stats-commissions-inside {}

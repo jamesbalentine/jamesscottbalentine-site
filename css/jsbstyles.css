@@ -14,8 +14,8 @@ a:hover {text-decoration: underline;}
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 1040px; background-color: black; padding-bottom: 4px;}
 #books-image {float: left; padding: 10px 0;}
 #bio {background-color: black; width: 1040px; margin-left: auto; margin-right: auto; color: white;}
-#bio-header{}
-#bio-header-image, #bio-header-image img {display: inline-block; float: left; height: 300px; vertical-align: top;}
+#bio-header{width: 800px; margin-left: auto; margin-right: auto;}
+#bio-header-image, #bio-header-image img {display: inline-block; float: left; height: 250px; vertical-align: top;}
 #bio-header-stats {display: inline-block;}
 #bio-header-stats-commissions {padding: 10px; border-top: 1px solid #3A3030; width: 800px; border-bottom: 1px solid #3A3030;}
 #bio-header-stats-commissions-inside {}
@@ -27,7 +27,7 @@ a:hover {text-decoration: underline;}
 #bio-header-stats-awards-inside-list ul {}
 #bio-header-stats-performances {display: inline-block; padding: 10px;}
 #bio-header-stats-performances-inside-label {font-weight: bold;}
-#bio-main {width: 800px; margin-left: 110px;}
+#bio-main {width: 800px; margin-left: 110px; padding-bottom: 10px;}
 #bio-main-graphic {border-radius: 5px; background-color: gray; margin-left: -50px; width: 900px; margin-top: 10px; border: 2px solid black;}
 #bio-main-professional {background-color: #3A3030; padding: 10px; border: 1px solid black;}
 #bio-main-professional-inside {}

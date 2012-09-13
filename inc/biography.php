@@ -1,8 +1,8 @@
 <div id="bio">
   <div id="bio-header">
-    <div id="bio-header-image"><img src="../Images/jsbedinburghsoft.png"></img></div>
     <div id="bio-header-stats">
       <div id="bio-header-stats-commissions">
+        <div id="bio-header-image"><img src="../Images/jsbedinburghsoft.png"></img></div>
         <div id="bio-header-stats-commissions-inside">
           <div id="bio-header-stats-commissions-inside-label">Commissions</div>
           <div id="bio-header-stats-commissions-inside-list">

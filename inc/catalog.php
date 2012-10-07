@@ -37,7 +37,9 @@
                     foreach( $scores as $scoreIndex=>$score ) {
                     $score = filter_var($composition->getElementsByTagName("score")->item($scoreIndex)->getAttribute('value'), FILTER_SANITIZE_STRING);
                     ($scores->length > 0) ? $scoreIndex++ : $scoreIndex = null;
-                    echo "<div class='catalog-composition-left-score'><div class='catalog-composition-links-score'><a href='$score'>$name score $scoreIndex</a></div></div>";
+                    echo "<div class='catalog-composition-left-background'><a href='$score'><div class='catalog-composition-links-score'>";
+                    echo ($scores->length > 1) ? $scoreIndex : " ";
+                    echo "</div></a></div>";
                     }
                     echo "
                 </div>

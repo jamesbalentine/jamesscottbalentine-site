@@ -13,25 +13,25 @@ a:hover {text-decoration: underline;}
 
 .body-section {text-align: center; margin-left: auto; margin-right: auto; height: auto; width: 1040px; background-color: black; padding-bottom: 4px;}
 #books-image {float: left; padding: 10px 0;}
-#bio {padding: 5px; background-color: black; width: 1080px; margin-left: auto; margin-right: auto; color: white;}
-#bio-header{}
-#bio-header-image {display: inline-block; height: 300px;}
+#bio {background-color: black; width: 1040px; margin-left: auto; margin-right: auto; color: white;}
+#bio-header{width: 800px; margin-left: auto; margin-right: auto;}
+#bio-header-image, #bio-header-image img {display: inline-block; float: left; height: 250px; vertical-align: top;}
 #bio-header-stats {display: inline-block;}
-#bio-header-stats-commissions {border-top: 1px solid #3A3030; width: 800px; border-bottom: 1px solid #3A3030;}
+#bio-header-stats-commissions {padding: 10px; border-top: 1px solid #3A3030; width: 800px; border-bottom: 1px solid #3A3030;}
 #bio-header-stats-commissions-inside {}
 #bio-header-stats-commissions-inside-label {font-weight: bold;} 
 #bio-header-stats-commissions-inside-list ul {display: inline-block;}
-#bio-header-stats-awards {display: inline-block; padding: 10px; border-right: 1px solid #3A3030;}
+#bio-header-stats-awards {vertical-align: top; display: inline-block; padding: 10px; border-right: 1px solid #3A3030;}
 #bio-header-stats-awards-inside {}
 #bio-header-stats-awards-inside-label {font-weight: bold;}
 #bio-header-stats-awards-inside-list ul {}
 #bio-header-stats-performances {display: inline-block; padding: 10px;}
-#bio-header-stats-performances-inside-label {}
-#bio-main {width: 800px; margin-left: 110px;}
+#bio-header-stats-performances-inside-label {font-weight: bold;}
+#bio-main {width: 800px; margin-left: 110px; padding-bottom: 10px;}
 #bio-main-graphic {border-radius: 5px; background-color: gray; margin-left: -50px; width: 900px; margin-top: 10px; border: 2px solid black;}
 #bio-main-professional {background-color: #3A3030; padding: 10px; border: 1px solid black;}
 #bio-main-professional-inside {}
-#bio-main-professional-label {font-weight: bold;}
+#bio-main-professional-inside-label {font-weight: bold;}
 #bio-main-professional-inside-paragraph p {}
 #bio-main-personal {padding: 10px; border: 1px solid black; background-color: #3A3030;}
 #bio-main-personal-inside {}

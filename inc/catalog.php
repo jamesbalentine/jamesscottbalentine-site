@@ -27,7 +27,7 @@
             $price = filter_var($composition->getElementsByTagName("price")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
             
             $playerindex = ($audiourls->length > 0) ? $playerindex+1 : $playerindex;
-            $sampleplayer = ($audiourls->length > 0) ? "<div class='catalog-composition-left-background'><div class='catalog-composition-links-player' onclick='parent.scrollToSong($playerindex);'></div></div>" : " " ;
+            $sampleplayer = ($audiourls->length > 0) ? "<div class='catalog-composition-left-background'><div id='$playerindex' class='catalog-composition-links-player' onclick='playerStart(id);'></div></div>" : " " ;
             echo "
             <div class='catalog-composition'>
                 <div class='catalog-composition-left'>

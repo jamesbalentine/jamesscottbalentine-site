@@ -14,3 +14,4 @@ img.media {margin: 8px !important;}
 .playButton {border-radius: 10px; margin: 15px; background: url('../Images/Playbutton2.jpg') no-repeat scroll center center; background-size: 80px 80px; width: 80px; height: 80px; display: block;}
 .playerButton {width: 80px !important;}
 #scrollable {background-color: black; color: white;}
+#scrollable-wrapper {margin-left: auto; margin-right: auto; width: 1040px;}

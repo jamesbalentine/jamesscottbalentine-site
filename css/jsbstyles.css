@@ -54,8 +54,8 @@ a:hover {text-decoration: underline;}
 #footer-wrapper {width: 1040px; display: block; margin-left: auto; margin-right: auto; background-color: black;}
 
 #header {width: 1040px; position: relative; border-bottom: 4px solid #ff9900; padding: 50px 0 0 0;}
-#homepage-left {display: inline-block; width: 700px;}
-#homepage-right {display: inline-block; width: 300px; float: right; border-left: 1px solid #F90; border-bottom: 10px dotted black; border-top: 50px dotted black;}
+#homepage-left {display: inline-block; width: auto;}
+#homepage-right {display: inline-block; width: auto; border-left: 1px solid #F90; border-bottom: 10px dotted black; border-top: 50px dotted black;}
 #homepage-header {}
 #homepage-header-title {border-right: 120px dotted black; border-left: 120px dotted black; border-bottom: 2px solid #F90; padding: 0;}
 .header-section {font-size: 36px; border-bottom-width:4px; border-bottom-style:groove; border-bottom-color:#ff9900;}

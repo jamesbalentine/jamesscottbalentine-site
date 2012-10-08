@@ -4,7 +4,7 @@
 .catalog-composition-description {display: inline-block; width:390px; padding: 0 10px 0 10px; vertical-align: top;}
 
 .catalog-composition-links {display: inline-block; position: relative; right: 5px; top: 5px; width: 210px;}
-.catalog-composition-links-player {background: url("../Images/power-tab-icons-vector-800.jpeg") no-repeat -137px -482px; width: 100%; height: 100%;}
+.catalog-composition-links-player {background: url("../Images/power-tab-icons-vector-800.jpeg") no-repeat -137px -479px; width: 100%; height: 100%;}
 .catalog-composition-left {display: inline-block; vertical-align: top; width: 200px; clear: left;}
 .catalog-composition-left-background {margin: 3px; border: 2px solid #f90; border-radius: 5px; float: left; width: 30px; height: 34px;}
 .catalog-composition-links-score {background: url("../Images/power-tab-icons-vector-800.jpeg") no-repeat -340px -778px; width: 100%; height: 100%; text-indent: 5px; color: white; font-size: 14px;}

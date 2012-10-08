@@ -9,6 +9,9 @@
 				$("div.scrollable").scrollable().seekTo(songindex);
 				playerPause("jplayer_"+songindex);
 			}
+			function pauseSong(songindex) {
+				playerPlay("jplayer_"+songindex);
+			}
 		</script>
 	</head>
 	<body style="overflow: hidden;">

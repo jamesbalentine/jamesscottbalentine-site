@@ -25,6 +25,7 @@
 </style>
 <script type="text/javascript">
     function playerPause(buttonid) {
+    	console.log("playerpause "+buttonid);
     	$("#jquery_"+buttonid).jPlayer('pauseOthers');
     	$("#jquery_"+buttonid).jPlayer('play');
     	$(".playerButton").removeClass("pauseButton");
@@ -35,6 +36,7 @@
     	document.getElementById(buttonid).onclick=function(){playerPlay(buttonid);};
     }
     function playerPlay(buttonid) {
+    	console.log("playerplay "+buttonid);
     	$("#jquery_"+buttonid).jPlayer('pauseOthers');
     	$("#jquery_"+buttonid).jPlayer('pause');
     	$(".playerButton").removeClass("pauseButton");
@@ -42,75 +44,77 @@
     	document.getElementById(buttonid).onclick=function(){playerPause(buttonid);};
     }
 </script>
-<a class="prev browse left"></a>
-<div class="scrollable" id="scrollable" >
-	<div class="items">
-		<?php
-		    $doc = new DOMDocument();
-		    $doc->load( 'inc/catalog.xml' );
-		    $index = -1;
+<div id="scrollable-wrapper">
+	<a class="prev browse left"></a>
+	<div class="scrollable" id="scrollable" >
+		<div class="items">
+			<?php
+			    $doc = new DOMDocument();
+			    $doc->load( 'inc/catalog.xml' );
+			    $index = -1;
 
-		    $sections = $doc->getElementsByTagName( "section" );
+			    $sections = $doc->getElementsByTagName( "section" );
 
-			foreach( $sections as $key=>$section ) {
-			        $sectionTitle = filter_var($section->getAttribute('category'), FILTER_SANITIZE_STRING);
-			        $compositions = $section->getElementsByTagName( "composition" );
-		        foreach( $compositions as $composition ) {
-		        	$name = filter_var($composition->getElementsByTagName("name")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
-		            $description = filter_var($composition->getElementsByTagName("description")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
-		            $audiourls = $composition->getElementsByTagName( "audiourl" );
+				foreach( $sections as $key=>$section ) {
+				        $sectionTitle = filter_var($section->getAttribute('category'), FILTER_SANITIZE_STRING);
+				        $compositions = $section->getElementsByTagName( "composition" );
+			        foreach( $compositions as $composition ) {
+			        	$name = filter_var($composition->getElementsByTagName("name")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
+			            $description = filter_var($composition->getElementsByTagName("description")->item(0)->nodeValue, FILTER_SANITIZE_STRING);
+			            $audiourls = $composition->getElementsByTagName( "audiourl" );
 
-		            $index = ($audiourls->length > 0) ? $index+1 : $index;
+			            $index = ($audiourls->length > 0) ? $index+1 : $index;
 
-		        	if($audiourls->length > 0) {
-		        		echo "<div class='media'>
-							<div class='media-image-wrapper media'>
-								<div id='jquery_jplayer_$index' class='jp-jplayer'></div>
-								<div id='jplayer_$index' class='playerButton playButton' onclick=playerPause(id); ></div>
-							</div>
-							<div class='media-details'>
-								<div class='media-title media'>$name</div>
-								<div class='media-title-suffix media'> - $sectionTitle</div>
-								<div class='media-instruments media'>
-									<div class='media-description media'>$description</div>
+			        	if($audiourls->length > 0) {
+			        		echo "<div class='media'>
+								<div class='media-image-wrapper media'>
+									<div id='jquery_jplayer_$index' class='jp-jplayer'></div>
+									<div id='jplayer_$index' class='playerButton playButton' onclick=playerPause(id); ></div>
 								</div>
-							</div>
-						</div>";
-					}
-		        }
-		    }
+								<div class='media-details'>
+									<div class='media-title media'>$name</div>
+									<div class='media-title-suffix media'> - $sectionTitle</div>
+									<div class='media-instruments media'>
+										<div class='media-description media'>$description</div>
+									</div>
+								</div>
+							</div>";
+						}
+			        }
+			    }
 
-		    echo "<script type='text/javascript'>
-		    	$(document).ready(function(){";
-		    $compositions2 = $doc->getElementsByTagName( "composition" );
-		    $keyindex = -1;
-	    	foreach( $compositions2 as $composition2 ) {
-	    		$audiourls = $composition2->getElementsByTagName( "audiourl" );
-	    		foreach( $audiourls as $audioIndex=>$audiourl ) {
-                    $audiourl = filter_var($composition2->getElementsByTagName("audiourl")->item(0)->getAttribute('value'), FILTER_SANITIZE_STRING);
-                }
+			    echo "<script type='text/javascript'>
+			    	$(document).ready(function(){";
+			    $compositions2 = $doc->getElementsByTagName( "composition" );
+			    $keyindex = -1;
+		    	foreach( $compositions2 as $composition2 ) {
+		    		$audiourls = $composition2->getElementsByTagName( "audiourl" );
+		    		foreach( $audiourls as $audioIndex=>$audiourl ) {
+	                    $audiourl = filter_var($composition2->getElementsByTagName("audiourl")->item(0)->getAttribute('value'), FILTER_SANITIZE_STRING);
+	                }
 
-                $keyindex = ($audiourls->length > 0) ? $keyindex+1 : $keyindex;
+	                $keyindex = ($audiourls->length > 0) ? $keyindex+1 : $keyindex;
 
-	    		$playeritem = ($audiourls->length > 0) ? "
-		        	$('#jquery_jplayer_$keyindex').jPlayer({
-			        ready: function () {
-			          $(this).jPlayer('setMedia', {
-			            mp3: 'audio/$audiourl'
-			          });
-			        },
-			        swfPath: './js',
-			        supplied: 'mp3',
-					preload: 'none'		
-			      });" : " ";
-	    		
-	    		echo $playeritem; 
-			}
-			echo "});</script>";
-		?>
+		    		$playeritem = ($audiourls->length > 0) ? "
+			        	$('#jquery_jplayer_$keyindex').jPlayer({
+				        ready: function () {
+				          $(this).jPlayer('setMedia', {
+				            mp3: 'audio/$audiourl'
+				          });
+				        },
+				        swfPath: './js',
+				        supplied: 'mp3',
+						preload: 'none'		
+				      });" : " ";
+		    		
+		    		echo $playeritem; 
+				}
+				echo "});</script>";
+			?>
+		</div>
 	</div>
+	<a class="next browse right"></a>
 </div>
-<a class="next browse right"></a>
 <script>
 $(function() {
   // initialize scrollable

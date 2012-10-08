@@ -10,14 +10,14 @@
 		});
 	}
 	function playerStart(songindex){
-		console.log("playerstart "+songindex);
+		console.log("playerstart: " + $("#composition_"+songindex).html());
 		parent.scrollToSong(songindex);
-		$(".catalog-composition-links-player").each(function(){this.onclick=function(){playerStart(this.id);}});
-		$("#"+songindex).onclick=function(){playerStop(songindex);}; 
+		$(".catalog-composition-links-player").each(function(){this.onclick=function(){playerStart($(this).html());}});
+		document.getElementById("composition_"+songindex).onclick=function(){playerStop(songindex);}; 
 	}
 	function playerStop(songindex){
-		console.log("playerstop "+songindex);
+		console.log("playerstop: "+ $("#composition_"+songindex).html());
 		parent.pauseSong(songindex);
-		$("#"+songindex).onclick=function(){playerStart(songindex);}; 
+		document.getElementById("composition_"+songindex).onclick=function(){playerStart(songindex);}; 
 	}
 </script>

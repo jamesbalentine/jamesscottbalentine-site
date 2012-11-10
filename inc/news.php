@@ -32,7 +32,7 @@
             if($images->length > 0) {
 	            foreach( $images as $imageIndex=>$imageurl ) {
 	                $imagelink = filter_var($imageurl->getAttribute('url'), FILTER_SANITIZE_STRING);
-	                echo "<a href='$imagelink'>$name link $imageIndex</a>";
+	                echo "<img src='$imagelink'>";
 	            }
         	}
             echo "

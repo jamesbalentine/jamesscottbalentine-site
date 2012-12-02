@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://guildhian.com/staging/css/catalog.css">
+<link rel="stylesheet" type="text/css" href="http://guildhian.com/staging/css/news.css">
 <div id="main-content" class="container">
 <?php
     $doc = new DOMDocument();
